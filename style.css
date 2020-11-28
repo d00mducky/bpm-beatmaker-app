@@ -32,6 +32,17 @@ i, svg {
 .hihat-pad {
   background: lightcoral;
 }
+/* oversaturate color when active */
+.kick-pad.active {
+  background: rgb(238, 115, 134);
+}
+.snare-pad.active {
+  background: rgb(94, 189, 221);
+}
+.hihat-pad.active {
+  background: rgb(209, 51, 51);
+}
+
 
 .sequencer {
   display: flex;
@@ -41,7 +52,7 @@ i, svg {
   justify-content: center;
 }
 
-.hihat-track, .snare-track, .kick-track {
+.kick-track, .snare-track, .hihat-track  {
   display: flex;
   align-items: center;
   width: 70%;
@@ -52,3 +63,24 @@ i, svg {
 .kick, .snare, .hihat {
   display: flex;
 }
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: rgb(75, 75, 83);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
